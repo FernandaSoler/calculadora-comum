@@ -1,21 +1,19 @@
-# 🧮 Calculadora Simples
+# 🧮 Calculadora Comum
 
-Este repositório contém uma aplicação web de **calculadora interativa** desenvolvida em **HTML, CSS e JavaScript**.  
-O objetivo é demonstrar conhecimentos em **lógica de programação, manipulação do DOM, design responsivo e interações dinâmicas**.
+Este repositório contém uma aplicação web de **calculadora tradicional** desenvolvida em **HTML, CSS e JavaScript**.  
+O objetivo do projeto é praticar conceitos de desenvolvimento front-end, lógica de programação e manipulação do DOM.
 
 ---
 
 ## 🚀 Funcionalidades
 
-- ➕ **Soma** de dois números  
-- ➖ **Subtração** de dois números  
-- ✖️ **Multiplicação** de dois números  
-- ➗ **Divisão** de dois números (com tratamento de erro para divisão por zero)  
-- 📜 **Histórico de cálculos** exibido em lista dinâmica  
-- 🌙 **Alternância de tema** (claro/escuro) com botão dedicado  
-- 🎨 **Animações e efeitos visuais** nos botões e histórico  
+✔️ Inserção de números no visor por meio dos botões  
+✔️ Suporte às quatro operações básicas: **adição, subtração, multiplicação e divisão**  
+✔️ Botão **= (igual)** para calcular a expressão digitada  
+✔️ Botão **C (Zerar)** para limpar o visor e iniciar um novo cálculo  
+✔️ Suporte a **números decimais**  
+✔️ Design responsivo, moderno e intuitivo  
 
 ---
 
 ## 📂 Estrutura do Projeto
-
