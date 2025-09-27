@@ -1,33 +1,21 @@
-function calcular(operacao) {
-  const num1 = parseFloat(document.getElementById("num1").value);
-  const num2 = parseFloat(document.getElementById("num2").value);
-  let resultado;
-
-  if (isNaN(num1) || isNaN(num2)) {
-    alert("Por favor, insira dois números válidos.");
-    return;
-  }
-
-  switch (operacao) {
-    case '+': resultado = num1 + num2; break;
-    case '-': resultado = num1 - num2; break;
-    case '*': resultado = num1 * num2; break;
-    case '/': 
-      resultado = num2 !== 0 ? (num1 / num2) : "Erro: divisão por zero";
-      break;
-  }
-
-  document.getElementById("resultado").innerText = "Resultado: " + resultado;
-
-  // Adiciona ao histórico
-  const historico = document.getElementById("historico");
-  const li = document.createElement("li");
-  li.textContent = `${num1} ${operacao} ${num2} = ${resultado}`;
-  historico.prepend(li);
+// Insere valores no display
+function inserir(valor) {
+  document.getElementById("display").value += valor;
 }
 
-// Alternar tema
-document.getElementById("theme-toggle").addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-});
+// Limpa o display (zerar)
+function limpar() {
+  document.getElementById("display").value = "";
+}
+
+// Calcula a expressão
+function calcular() {
+  let expressao = document.getElementById("display").value;
+  try {
+    let resultado = eval(expressao);
+    document.getElementById("display").value = resultado;
+  } catch (e) {
+    alert("Expressão inválida!");
+  }
+}
 
